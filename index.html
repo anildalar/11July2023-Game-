@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Class </title>
+    </head>
+    <body>
+        
+
+        <script>
+            let student1 = '';
+            
+            function stud(){
+
+            }
+            //1. Define the class
+            //Oklabs
+            //ClassName should always be writtern in PascalCase
+            
+            class Oklabs{
+                //1. Property:Value
+                stu1='';
+                stu2='';
+                stu3='';
+                //2. Constructor
+                //constructor is like a espcial method
+                constructor(s1,s2,s3){
+                    //The role of constructor is to initialize the properties
+                     // Left = Right // Associativity of the opertor
+                    this.stu1 = s1;
+                    this.stu2 = s2;
+                    this.stu3 = s3;
+                    // this is an internal class object
+                }
+                //3. Method
+                //Defination
+                myStudent(){
+                    console.log('Hello'+this.stu1+this.stu2+this.stu3);
+                }
+
+            }
+            //2. Create class Object 
+            //let classObject = new ClassName();
+            //Class instantiation
+            myGamePiece = new Oklabs("Ranu",'Goutam',`Abhishek`);// Parameters
+            //students is an external class object
+            //classObject.member
+            myGamePiece.myStudent();
+
+        </script>
+    </body>
+</html>
